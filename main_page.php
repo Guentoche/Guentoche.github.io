@@ -13,7 +13,7 @@
 </head>
 <body style="height:1500px">
 
-<nav class="navbar navbar-inverse ">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Mon site web</a>
