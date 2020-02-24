@@ -58,38 +58,38 @@ $(document).ready(function(){
 </nav>
 
 <div id=two class="container" style="margin-top:50px">
-  <h1 align=center><br> Bienvenue sur mon site !</h1>
-  <p align=center><br><br>Texte de blabla.</p>
+  <h1 align=center><br>Bonjour et bienvenue sur mon site !</h1>
+  <h4 align=center><br> Théo PEAN <br> Développeur Web <br></h4>
 </div>
 
 <div id=three class="container" style="margin-top:50px">
   <h1 align=center><br> A propos de moi </h1>
-  <p align=center><br><br></p>
+  <h4 align=center><br> Bonjour et bienvenue sur mon site ! Je m'appelle Théo et je suis diplômé d'un BTS SN IR. Après l'obtention de mon diplôme, j'ai choisi de me spécialiser dans le developpement Web. J'intègre une formation Développement Web & Mobile à l'ECE TECH. Je suis actuellement à la recherche d'une entreprise afin d'effectuer une année d'alternance. Hormis cela je suis passioné par la culture geek et l'informatique. <br></h4>
 </div>
 
 <div id=four class="container" style="margin-top:50px">
   <h1 align=center><br> Compétences </h1>
-  <p align=center><br><br>aaaaaaaaaaaa</p>
+  <h4 align=center><br><br> Language et techs </h4>
 </div>
 
 <div id=five class="container" style="margin-top:50px">
   <h1 align=center><br> Expériences </h1>
-  <p align=center><br><br>aaaaaaaaaaaa</p>
+  <h3 align=center><br><br> BCA, Itron, RATP </h4>
 </div>
 
 <div id=six class="container" style="margin-top:50px">
   <h1 align=center><br> Formations </h1>
-  <p align="center"><br><br>aaaaaaaa</p> 
+  <h4 align="center"><br><br> BTS SN, BAC STI2D </h4> 
 </div>
 
 <div id=seven class="container" style="margin-top:50px">
   <h1 align=center><br> Réalisations </h1>
-  <p align="center"><br><br>aaaaaaaa</p> 
+  <h4 align="center"><br><br> Ce site, Projet BTS: Autolib </h4> 
 </div>
 
 <div id=eight class="container" style="margin-top:50px">
   <h1 align=center><br> Contact </h1>
-  <p align="center"><br><br>aaaaaaaa</p> 
+  <h4 align="center"><br><br> Numéro de téléphone, Mail, GitHub </h4> 
 </div>
 
 
