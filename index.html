@@ -1,32 +1,201 @@
-!<DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<!--HEAD-->
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<title> Mon Portfolio</title>
 
-		<title></title>>Home - Portfolio main page</title>
-		<link href="css/boostrap.min.css" rel="stylesheet">
+		<!--CSS-->
+		<link rel="stylesheet" href="public/css/main.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="shortcut icon" type="image/png" href="public/favicon.png"/>
+		<!--CSS-->
+
+		<!--FONT-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/16909d3616.js" crossorigin="anonymous"></script>
+		<!--FONT-->
+
+		<!-- meta SEO-->
+		<meta name="description" content="La description de votre site! PRIMORDIAL: mettre des bons mots clés !">
+		<meta name="keywords" content="webdesign, web dev, dev front-end">
+		<meta name="title" content="Développeur Web Junior - Théo PEAN">
+		<!-- meta SEO-->
 
 	</head>
+	<!-- HEAD-->
+
+	<!-- BODY -->
 	<body>
-		<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Mon premier portfolio</a>
+		<!--header-->
+		<div class="block">
+			<header class=header>
+				<a href="#" class="header-logo"> Mon Portfolio</a>
+				<nav class="header-menu">
+					<a href="#"><i class="fas fa-home"></i>  Accueil</a>
+					<a href="#"><i class="far fa-question-circle"></i>  À propos</a>
+					<a href="#"><i class="fas fa-archive"></i>  Mon Portfolio</a>
+					<a href="#"><i class="fas fa-phone"></i>  Contact</a>
+				</nav>
+			</header>
+		</div>
+		<!--header-->
+
+		<!--banner-->
+		<div class="block">
+			<div class="banner">
+				<img src="public/image/image.jpg" class="banner-image">
+				<div class="banner-content">
+					<h1> Bienvenue sur mon portfolio</h1>
+					<h2> Découvrez mes travaux et mon univers !</h2>
+					<button class="button is-link"> Télécharger mon CV</button>
+			</div>
+		</div>
+		<!--banner-->
+		<!--section à propos-->
+		<div class="block">
+			<h2 class="subtitle heading-site">À propos</h2>
+			<div class="container about">
+				<div class="columns">
+					<div class="column about-single-element">
+						<h5> Qui suis-je ?</h5>
+						<i class="fas fa-code icon"></i>
+						<p>
+							Je suis Théo, Développeur Web junior et je suis à la recherche d'une formation en alternance.
+						</p>
+					</div>
+					<div class="column about-single-element">
+						<h5>Mes formations</h5>
+						<i class="fas fa-graduation-cap"></i>
+						<p>
+							BTS SN IR - Lycée Christophe Colomb (2017-2019)<br/>Développement Web, études de réseaux, développement logiciel<br/>
+							BAC STI2D SIN - Lycée Christophe Comb (2015-2017)
+						</p>
+					</div>
+					<div class="column about-single-element">
+						<h5>Mes expériences</h5>
+						<i class="fas fa-briefcase"></i>
+						<p>
+							Bonjour je m'appelle théo je suis développeur web junior j'ai 20 ans blablablablablabla
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
+		<!--Section à propos-->
 
-			<h1>Mon portfolio</h1>
+		<!--portfolio-->
+		<div class="block">
+			<h2 class="subtitle heading-site"> Mon portfolio</h2>
+			<div class="container">
+				<div class="tile is-ancestor">
+				<div class="tile is-vertical is-8">
+					<div class="tile">
+						<div class="tile is-parent is-vertical">
+							<article class="tile is-child">
+								<div class="notification"> contient une photo</div>
+							</article>
+							<article class="tile is-child">
+							<img src="public/image/image.jpg">
+							</article>
+						</div>
+						<div class="tile is-parent">
+							<article class="tile is-child">
+								<div class="notification is primary">
+									<div class="COLORED">100x100</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="tile is-parent">
+						<article class="tile is-child">
+							<image src="public/image/image.jpg">
+						</article>
+					</div>
+					<div class="tile is-parent">
+						<article class="tile is-child">
+							<div class="notification is-warning">
+								le contenu
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
 		</div>
+		<!--portfolio-->
+
+		<!-- Contact-->
+		<div class="block">
+			<footer class="footer">
+				<h2 class="heading-site">Contactez-moi</h2>	
+				<div class="footer-contact-form">
+					<form>
+						<div class="field">
+							<label class="label">Votre nom</label>
+							<div class="control">
+								<input id="name" class="input" type=text placeholder="Nom" name="name">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Votre prénom</label>
+							<div class="control">
+								<input id="firstname" class="input" type=text placeholder="Prénom" name="firstname">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Votre email</label>
+							<div class="control">
+								<input id="email" class="input" type=text placeholder="email@email.fr" name="email">
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Objet du mail</label>
+							<div class="control">
+								<textarea id="objet" class="input" type="text" placeholder="Objet du mail" name="objet"></textarea>
+							</div>
+						</div>
+						<div class="field">
+							<label class="label">Votre message</label>
+							<div class="control">
+								<textarea id="message" class="textarea" placeholder="Expliquez votre demande" name="message"></textarea>
+							</div>
+						</div>
+					</form>
+					<button class="button is-link" id="send_email">Envoyer</button>
+				</div>
+				<div class="footer-information">
+					<p> 22bis avenue du 8 mai 1945</p>
+					<p> 94450, Limeil-Brévannes, France</p>
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fab fa-linkedin icon"></i> <!-- LinkedIn-->
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-github icon"></i> <!-- GitHub-->
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-instagram icon"></i> <!-- Instagram-->
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				</footer>
+		</div>		
+		<!-- Contact-->
 
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="public/js/main.js"></script>
 	</body>
+	<!--BODY-->
 
 </html>

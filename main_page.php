@@ -21,7 +21,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 600, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -35,10 +35,11 @@ $(document).ready(function(){
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="public/css/header.css">
+  <link rel="stylesheet" href="public/css/base.css">
+
 </head>
-<body style="height:80%">
+<body style="height:90%">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -57,37 +58,38 @@ $(document).ready(function(){
   </div>
 </nav>
 
-<div id=two class="container" style="margin-top:50px">
+<div id=two class="container1" style="margin-top:50px">
   <h1 align=center><br>Bonjour et bienvenue sur mon site !</h1>
   <h4 align=center><br> Théo PEAN <br> Développeur Web <br></h4>
+  <a href="public/doc/Mon_CV" download="THEO_PEAN_CV">Télécharger mon CV</a>
 </div>
 
-<div id=three class="container" style="margin-top:50px">
+<div id=three class="container2" style="margin-top:50px">
   <h1 align=center><br> A propos de moi </h1>
   <h4 align=center><br> Bonjour et bienvenue sur mon site ! Je m'appelle Théo et je suis diplômé d'un BTS SN IR. Après l'obtention de mon diplôme, j'ai choisi de me spécialiser dans le developpement Web. J'intègre une formation Développement Web & Mobile à l'ECE TECH. Je suis actuellement à la recherche d'une entreprise afin d'effectuer une année d'alternance. Hormis cela je suis passioné par la culture geek et l'informatique. <br></h4>
 </div>
 
-<div id=four class="container" style="margin-top:50px">
+<div id=four class="container3" style="margin-top:50px">
   <h1 align=center><br> Compétences </h1>
   <h4 align=center><br><br> Language et techs </h4>
 </div>
 
-<div id=five class="container" style="margin-top:50px">
+<div id=five class="container4" style="margin-top:50px">
   <h1 align=center><br> Expériences </h1>
   <h3 align=center><br><br> BCA, Itron, RATP </h4>
 </div>
 
-<div id=six class="container" style="margin-top:50px">
+<div id=six class="container5" style="margin-top:50px">
   <h1 align=center><br> Formations </h1>
   <h4 align="center"><br><br> BTS SN, BAC STI2D </h4> 
 </div>
 
-<div id=seven class="container" style="margin-top:50px">
+<div id=seven class="container6" style="margin-top:50px">
   <h1 align=center><br> Réalisations </h1>
   <h4 align="center"><br><br> Ce site, Projet BTS: Autolib </h4> 
 </div>
 
-<div id=eight class="container" style="margin-top:50px">
+<div id=eight class="container7" style="margin-top:50px">
   <h1 align=center><br> Contact </h1>
   <h4 align="center"><br><br> Numéro de téléphone, Mail, GitHub </h4> 
 </div>
