@@ -93,13 +93,74 @@ ABOUT
 	text-align:left;
 	margin-top: 20px;
 }
+/*
+Portfolio
+*/
+.autolib{
+	background-image: url("public/image/autolib.png");
+}
+
+#images-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display:flex;
+	-ms-flex-wrap: wrap;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.portfolio-image{
+	margin-bottom:40px;
+	border-radius: 2px;
+	position: relative;
+}
+
+.description-projet{
+	visibility: hidden;
+	color: #ffffff;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background: rgba(0,0,0,0.5);
+	padding:10px 10px;
+}
+.description-projet a{
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: 700;
+}
+.description-projet a:hover{
+	text-decoration: underline;
+}
+.texte-description-projet{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.portfolio-image:hover > .description-projet{
+	visibility:visible;
+}
+.blue-circle{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	right: 20px;
+	top: -20px;
+	background-color: #5cadd3;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+}
+.icon_eye_settings{
+	display:block;
+	margin:0;
+	line-height: 40px;
+	text-align: center;
+}
 
 /*
 Footer
 */
-#footer{
-	background-color:#ddd;
-}
+
 .footer .footer-information {
 	margin-top: 20px;
 	text-align: center;
@@ -117,6 +178,12 @@ Footer
 	font-size: 40px;
 	margin:20px;
 }
+/*.footer #insta {
+	color:pink;
+}
+.footer #github {
+	color:black;
+}*/
 .fa-linkedin {
   background: white;
   color: #007bb5;

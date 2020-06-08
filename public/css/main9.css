@@ -100,20 +100,20 @@ Footer
 #footer{
 	background-color:#ddd;
 }
-.footer .footer-information {
+#footer .footer-information {
 	margin-top: 20px;
 	text-align: center;
 }
 
-.footer .footer-information ul{
+#footer .footer-information ul{
 	padding:0;
 }
 
-.footer .footer-information ul li{
+#footer .footer-information ul li{
 	display: inline-block;
 	list-style-type: none;
 }
-.footer .footer-information i{
+#footer .footer-information i{
 	font-size: 40px;
 	margin:20px;
 }
