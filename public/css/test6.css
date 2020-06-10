@@ -278,6 +278,19 @@ TIMELINE
 */
 
 /*
+COMPETENCES
+*/
+#skills-gallery{
+	padding: 50px 40px 0 40px;
+	margin: 0;
+}
+}
+/*
+COMPETENCES
+*/
+
+
+/*
 FORMATIONS
 */
 
@@ -296,6 +309,7 @@ EXPERIENCES
 */
 
 #experience-section {
+	padding-top: 50px;
 }
 
 /* 
