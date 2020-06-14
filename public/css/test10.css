@@ -580,18 +580,17 @@ TIMELINE
 /*
 COMPETENCES
 */
+.skill-section{
+	background-color: #ddd;
+}
 #skills-gallery{
 	padding: 50px 40px 0 40px;
 	margin: 0;
 }
-.logo-image{
-	width:50px;
-	height:50px;
-}	
+
 /*
 COMPETENCES
 */
-
 
 /*
 FORMATIONS

@@ -7,7 +7,7 @@
 		<title> Mon Portfolio</title>
 
 		<!--CSS-->
-		<link rel="stylesheet" href="public/css/test8.css">
+		<link rel="stylesheet" href="public/css/test12.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/png" href="public/favicon.png"/>
@@ -56,55 +56,34 @@
 		</div>
 		<!--banner-->
 		<!--section à propos-->
-		<div class="block">
-			<h2 class="subtitle heading-site">À propos</h2>
-			<div class="container about">
-				<div class="columns">
-					<div class="column about-single-element">
-						<h5> Qui suis-je ?</h5>
-						<i class="fas fa-code icon"></i>
-						<p>
-							Je suis Théo, Développeur Web junior et je suis à la recherche d'une formation en alternance.
-							Passioné par l'informatique, la culture japonaise, les comics et le catch.	
-						</p>
-					</div>
-					<div class="column about-single-element">
-						<h5>Mes formations</h5>
-						<i class="fas fa-graduation-cap"></i>
-						<p>
-							<ul>
-								<li>BTS SN IR - Lycée Christophe Colomb (2017-2019)<br/>Développement Web, études de réseaux, développement logiciel</li>
-								<li>BAC STI2D - Lycée Christophe Comb (2015-2017)<br/> Option SIN<li>
-							</ul>
-							
-						</p>
-					</div>
-					<div class="column about-single-element">
-						<h5>Mes expériences</h5>
-						<p>
-							<ul>
-								<li>Agent de tri - Amazon logistics (Avri-Mai 2020)</li><br/>
-								<li>Employé administratif - BCA (Juillet-Août 2018)</li><br/>
-								<li>Développeur Stagiaire - ITRON (Mai-Juin 2018)</li><br/>
-							</ul>
-						</p>
-					</div>
-				</div>
+		<section id="section-about" class="row">
+			<div class="col-md-12 text-center">
+			    <div class="dark-ribbon ribbon-left"></div><h2 class="section-title">A propos</h2><div class="dark-ribbon ribbon-right"></div>
 			</div>
-		</div>
+			<div class="col-md-12">
+				<p>Je m'appelle Théo et je suis titulaire d'un BTS SN IR. Je suis passionné par l'informatique, les mangas, les comics et le catch</p>
+			</div>
+		</section>
 		<!--Section à propos-->
+		<!--Compétencesv2-->
+
+		<!--Compétencesv2-->
 		<!--Compétences-->
-		<section>
+		<section id="skill-section" class="row">
 			<div class="col-md-12 text-center">
 			    <div class="dark-ribbon ribbon-left"></div><h2 class="section-title">Mes compétences</h2><div class="dark-ribbon ribbon-right"></div>
 			</div>
 			<div class="container skills">
-				<div class="row" id="skills-gallery">
-					<div class="col-md-6 thumbnail">
+				<div class="columns">
+					<div class="col-md-4 thumbnail">
 						<h5>Languages et CMS</h5>
 
 						<p>
-							<img class="logo-image" src="public/image/autolib.png" alt="html5">
+							
+								<img class="logo-img" src="public/image/qt.png">
+								<img class="logo-img" src="public/image/qt.png">
+								<img class="logo-img" src="public/image/qt.png">
+						</p>
 							HTML5
 							<ul>
 								<li>C++></li>
@@ -116,9 +95,8 @@
 								<li>Python</li>
 								<li>Prestashop</li>
 							</ul>
-						</p>
 					</div>
-					<div class="column skill-single-element">
+					<div class="col-md-4 thumbnail">
 						<h5>Framework et Technologies</h5>
 						<p>
 							<ul>
@@ -135,12 +113,15 @@
 							</ul>
 						</p>
 					</div>
-					<div class="column skill-single-element">
+					<div class="col-md-4 thumbnail">
 						<h5>OS</h5>
-						<ul>
-							<li>Windows</li>
-							<li>Linux</li>
-						</ul>						
+						<p>
+							
+						</p>
+							<ul>
+								<li>Windows</li>
+								<li>Linux</li>
+							</ul>						
 					</div>
 				</div>
 			</div>
@@ -223,7 +204,7 @@
             <div class="row" id="project-gallery">
 			<div class="col-md-6 thumbnail">
                     <div class="thumbnail-frame">
-                        <img class="thumbnail-img"  src="public/image/autolib.png" alt="Impression d'écran du projet WebAgency">
+                        <img class="thumbnail-img"  src="public/image/autolib.png" alt="Projet Autolib">
                         <div class="project-description">
                             <p class="text-center font-weight-bold project-description-title">Autolib</p>
                             <p class="text-center project-description-text">Projet de BTS, l'objectif est de reproduire le système Autolib avec la réservation de véhicule et plein d'autres choses</p>
