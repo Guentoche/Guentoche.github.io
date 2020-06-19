@@ -7,7 +7,7 @@
 		<title> Mon Portfolio</title>
 
 		<!--CSS-->
-		<link rel="stylesheet" href="public/css/test12.css">
+		<link rel="stylesheet" href="public/css/style.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/png" href="public/favicon.png"/>
@@ -18,10 +18,39 @@
 
 		<script src="https://kit.fontawesome.com/16909d3616.js" crossorigin="anonymous"></script>
 		<!--FONT-->
+		<!--SCRIPT-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+  				// Add smooth scrolling to all links
+  			$("a").on('click', function(event) {
+	
+  	  		// Make sure this.hash has a value before overriding default behavior
+	  	  	if (this.hash !== "") {
+   		   	// Prevent default anchor click behavior
+    			event.preventDefault();
+	
+	    	  	// Store hash
+	   	 	 	var hash = this.hash;
+	
+		    	  // Using jQuery's animate() method to add smooth page scroll
+    			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+   				$('html, body').animate({
+    			   	scrollTop: $(hash).offset().top
+    				}, 600, function(){
+	
+    	   		// Add hash (#) to URL when done scrolling (default click behavior)
+  			   		 window.location.hash = hash;
+   			  		 });
+   			 		} // End if
+  				});
+			});
+		</script>
+		<!--SCRIPT-->
 
 		<!-- meta SEO-->
 		<meta name="description" content="La description de votre site! PRIMORDIAL: mettre des bons mots clés !">
-		<meta name="keywords" content="webdesign, web dev, dev front-end">
+		<meta name="keywords" content="dev, web dev, dev back-end, portfolio">
 		<meta name="title" content="Développeur Web Junior - Théo PEAN">
 		<!-- meta SEO-->
 
@@ -35,17 +64,18 @@
 			<header class=header>
 				<a href="#" class="header-logo"> Mon Portfolio</a>
 				<nav class="header-menu">
-					<a href="#"><i class="fas fa-home"></i>  Accueil</a>
-					<a href="#"><i class="far fa-question-circle"></i>  À propos</a>
-					<a href="#"><i class="fas fa-archive"></i>  Mon Portfolio</a>
-					<a href="#"><i class="fas fa-phone"></i>  Contact</a>
+					<a href="#banner"><i class="fas fa-home"></i>  Accueil</a>
+					<a href="#skill-section"><i class="fas fa-pencil-alt"></i>  Mes compétences</a>
+					<a href="#formations-section"><i class="fas fa-briefcase"></i>  Parcours</a>
+					<a href="#portfolio-section"><i class="fas fa-archive"></i>  Mon Portfolio</a>
+					<a href="#contact"><i class="fas fa-phone"></i>  Contact</a>
 				</nav>
 			</header>
 		</div>
 		<!--header-->
 
 		<!--banner-->
-		<div class="block">
+		<div id="banner" class="block">
 			<div class="banner">
 				<img src="public/image/image.jpg" class="banner-image">
 				<div class="banner-content">
@@ -60,14 +90,21 @@
 			<div class="col-md-12 text-center">
 			    <div class="dark-ribbon ribbon-left"></div><h2 class="section-title">A propos</h2><div class="dark-ribbon ribbon-right"></div>
 			</div>
-			<div class="col-md-12">
-				<p>Je m'appelle Théo et je suis titulaire d'un BTS SN IR. Je suis passionné par l'informatique, les mangas, les comics et le catch</p>
+			<div class="container about">
+				<img src="public/image/photo.jpg" width="200px;" height="400px">
+				<div class="columns">
+					<p class="col-md-4 text-center">
+						
+					</p>
+					<p class="col-md-8 ">
+						Je m'appelle Théo, je suis titulaire d'un BTS SN IR. Je suis passionné par l'informatique, les mangas, les comics ainsi que le catch.
+						<br/>
+						Ce site recensera mon parcours, mes compétences ainsi que mes projets.
+					</p>
+				</div>
 			</div>
 		</section>
 		<!--Section à propos-->
-		<!--Compétencesv2-->
-
-		<!--Compétencesv2-->
 		<!--Compétences-->
 		<section id="skill-section" class="row">
 			<div class="col-md-12 text-center">
@@ -79,49 +116,35 @@
 						<h5>Languages et CMS</h5>
 
 						<p>
-							
-								<img class="logo-img" src="public/image/qt.png">
-								<img class="logo-img" src="public/image/qt.png">
-								<img class="logo-img" src="public/image/qt.png">
+							<img src="public/image/web.png" width="150px" height="50px">
+							<img class="logo-img" src="public/image/c++.png"><br/> 
+							<img src="public/image/php.png" height="50px" width="70px">
+							<img class="logo-img" src="public/image/python.png">
+							<img src="public/image/prestashop.png" width="70px" height="70px">				
 						</p>
-							HTML5
-							<ul>
-								<li>C++></li>
-								<li>C</li>
-								<li>PHP</li>
-								<li>HTML5</li>
-								<li>CSS3</li>
-								<li>JavaScript</li>
-								<li>Python</li>
-								<li>Prestashop</li>
-							</ul>
 					</div>
-					<div class="col-md-4 thumbnail">
-						<h5>Framework et Technologies</h5>
+					<div class="col-md-5 thumbnail">
+						<h5>     Frameworks</h5>
 						<p>
-							<ul>
-								<li>Codeblocks</li>
-								<li>Qt</li>
-								<li>Symfony</li>
-								<li>PhpStorm</li>
-								<li>Eclipse</li>
-								<li>Visual Studio</li>
-								<li>Bootstrap</li>
-								<li>Bulma</li>
-								<li>Arduino</li>
-								<li>Raspberry Pi</li>
-							</ul>
+							<img class="logo-img" src="public/image/bootstrap.png">  
+							<img class="logo-img" src="public/image/bulma.png">  
+							<img class="logo-img" src="public/image/symfony.png">  
+							<img src="public/image/eclipse.png" width="80px" height="80px">  
+							<img class="logo-img" src="public/image/phpstorm.png">
+							<img class="logo-img" src="public/image/visualstudio.png"><br/><br/>
 						</p>
 					</div>
 					<div class="col-md-4 thumbnail">
-						<h5>OS</h5>
+						<h5>OS et Technologies</h5>
 						<p>
-							
+							<img class="logo-img" src="public/image/linux.png">
+							<img class="logo-img" src="public/image/windows.png"><br/>
+							<img src="public/image/mysql.png" width="70px" height="50px">
+							<img src="public/image/arduino.png" width="60px"height="50px">
+							<img class="logo-img" src="public/image/raspberry.png">
+							<img class="logo-img" src="public/image/github.png">
 						</p>
-							<ul>
-								<li>Windows</li>
-								<li>Linux</li>
-							</ul>						
+													
 					</div>
 				</div>
 			</div>
@@ -157,7 +180,7 @@
 		</section>
 		
 		<!--Formations-->
-		<!-- Expériences-->
+		<!--Expériences-->
 
 		<section id="experience-section" class="row">
             <div class="col-md-12 text-center">
@@ -207,7 +230,7 @@
                         <img class="thumbnail-img"  src="public/image/autolib.png" alt="Projet Autolib">
                         <div class="project-description">
                             <p class="text-center font-weight-bold project-description-title">Autolib</p>
-                            <p class="text-center project-description-text">Projet de BTS, l'objectif est de reproduire le système Autolib avec la réservation de véhicule et plein d'autres choses</p>
+                            <p class="text-center project-description-text">Projet de BTS, l'objectif est de reproduire le système Autolib avec diverses fonctionnalités comme la réservation de véhicule, la simulation du véhicule sur Raspberry, etc.</p>
                             <p class="category-separator text-center project-description-title">Technologies</p>
                             <p><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Qt</span> <span class="tag">Raspberry Pi</p>
                             <p class="category-separator text-center project-description-title	">Liens</p>
@@ -217,74 +240,42 @@
                 </div>
 			<div class="col-md-6 thumbnail">
                     <div class="thumbnail-frame">
-                        <img class="thumbnail-img"  src="public/image/autolib.png" alt="Impression d'écran du projet Wordpress Strasbourg">
+                        <img class="thumbnail-img"  src="public/image/bac.png" height="200px" alt="Impression d'écran du projet Wordpress Strasbourg">
                         <div class="project-description">
                             <p class="text-center font-weight-bold project-description-title">Assistance à la personne: Supervision médicale </p>
-                            <p class="text-center project-description-text ">Projet de Bac en groupe, l'objectif est de réaliser un outil avec Arduinno permettant de détecter une collision</p>
+                            <p class="text-center project-description-text ">Projet de Bac en groupe, l'objectif est de réaliser un système avec Arduinno permettant de détecter la chute d'une personne, de mesurer le rythme cardiaque, prévenir les secours, etc.</p>
                             <p class="category-separator text-center project-description-title">Technologies</p>
                             <p><span class="tag">C</span> <span class="tag">Arduino</span></p>
                             <p class="category-separator text-center project-description-title">Liens</p>
-                            <p><a class="visit-button" href="https://github.com/Guentoche/Projet_Bac"><span class="fas fa-globe-americas fa-space-right"></span>Accéder au Projet</a></p>
+                            <p><a class="visit-button" href="https://github.com/Guentoche/Projet_BTS"><span class="fas fa-globe-americas fa-space-right"></span>Accéder au Projet</a></p>
                         </div>
                     </div>
                 </div>
 			</div>		
 		</section>
 		<!-- portfolio-->
-		
 		<!-- Contact-->
 		<div id="contact" class="scroll adjust"></div>
 		<footer id="contact-section">
 			<div id="contact-title" class="col-md-12 text-center">
 				<div class="dark-ribbon ribbon-left"></div><h2 class="section-title">Contactez-moi</h2><div class="dark-ribbon ribbon-right"></div>	
-	          	</div>
-				<div class="footer-contact-form">
-					<form>
-						<div class="field">
-							<label class="label">Votre nom</label>
-							<div class="control">
-								<input id="name" class="input" type=text placeholder="Nom" name="name">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label">Votre prénom</label>
-							<div class="control">
-								<input id="firstname" class="input" type=text placeholder="Prénom" name="firstname">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label">Votre email</label>
-							<div class="control">
-								<input id="email" class="input" type=text placeholder="email@email.fr" name="email">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label">Objet du mail</label>
-							<div class="control">
-								<textarea id="objet" class="input" type="text" placeholder="Objet du mail" name="objet"></textarea>
-							</div>
-						</div>
-						<div class="field">
-							<label class="label">Votre message</label>
-							<div class="control">
-								<textarea id="message" class="textarea" placeholder="Expliquez votre demande" name="message"></textarea>
-							</div>
-							<br/>							
-						</div>
-					</form>
-				<button class="button is-link" id="send_email">Envoyer</button>
-			</div>
+	         </div>
+				
 			<div class="footer-information">
+				<h3>pean.theo@hotmail.fr</h3>
+				<br/><br/>
+				<p> 06.58.74.43.21</p>
+				<br/><br/>
 				<p> 22bis avenue du 8 mai 1945</p>
 				<p> 94450, Limeil-Brévannes, France</p>
 				<ul>
 					<li>
-						<a href="#">
+						<a href="https://www.linkedin.com/in/th%C3%A9o-pean-a17b4618a/">
 							<i class="fab fa-linkedin icon"></i> <!-- LinkedIn-->
 						</a>
 					</li>
 					<li>
-						<a id="github" href="#">
+						<a id="github" href="https://github.com/Guentoche">
 							<i class="fab fa-github icon"></i> <!-- GitHub-->
 						</a>
 					</li>
@@ -297,10 +288,6 @@
 			</div>
 		</footer>
 		<!-- Contact-->
-
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="public/js/main.js"></script>
 	</body>
 	<!--BODY-->
 
