@@ -24,7 +24,7 @@ HEADER
 	width: 100%
 	margin-left:0;
 	margin-right:0;
-	height:50px;
+	height:10vh;
 	line-height: 50px;
 	background-color:#000000;
 	z-index: 999;
@@ -60,7 +60,7 @@ BANNER
 	}
 .banner .banner-image{
 	width: 100%;
-	height:400px;
+	height:90vh;
 	position:relative;
 	top:0;
 	left:0;
@@ -90,18 +90,31 @@ BANNER
 /* 
 ABOUT
 */
-#section-about{	
-	padding: 25px 40px 40px 40px;
+#section-about{
+	width:100%;
+	height:100vh;
 	margin: 0;
 }
 
 #section-about .col-md-12{
-	padding-bottom: 50px;
 }
-#section-about p{
-	padding-left: 20px;
+#section-about .container_about{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
+#section-about .element1 img{
+	float:left;
+	height: 400px;
+	width: 400px;
+	
+}
+#section-about .element2 {
+	margin-left: 50px;
+	padding-right: 50px;
 
+
+}
 /* 
 ABOUT
 */
@@ -285,18 +298,16 @@ COMPETENCES
 #skill-section{
 	padding-top: 50px;
 	background-color: #ddd;
+	height:100vh;
+	width: 100vw;
 }
 #skill-section .logo-img{
 	height:50px;
 	width:50px;
 }
 
-#skill-section .col-md-12{
-	padding-bottom: 50px;
-}
-#skill-section .skills{
-	padding-bottom: 50px;
-}
+
+
 /*
 COMPETENCES
 */
@@ -308,6 +319,8 @@ FORMATIONS
 #formations-section {
 	padding-top: 50px;
 	padding-left: 20px;
+	height: 100vh;
+	width: 100%;
 }
 
 /*
@@ -322,6 +335,8 @@ EXPERIENCES
 	background-color: #ddd;
 	padding-top: 50px;
 	padding-left: 20px;
+	width: 100%
+	height:100vh;
 }
 
 /* 
@@ -334,6 +349,8 @@ PORTFOLIO
 #portfolio-section {
 	padding-top: 50px;
 	padding-bottom: 20px;
+	width: 100%;
+	height: 100vh;
 }
 #project-gallery {
 	padding: 50px 40px 0 40px;
@@ -442,6 +459,8 @@ FOOTER
 	background-color: #ddd;
 	padding: 50px 40px 50px 40px;
 	padding-left: 40px;
+	width: 100%;
+	height: 100vh;
 }
 
 #contact-section .col-md-12{
@@ -469,6 +488,7 @@ FOOTER
 .footer-information i{
 	font-size: 40px;
 	margin:20px;
+	z-index:1;
 }
 
 .fa-linkedin {
@@ -482,7 +502,7 @@ FOOTER
     -webkit-background-clip:text;
 }
 .fa-instagram {
-	font-size: 80px;
+  font-size: 80px;
   color: transparent;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
