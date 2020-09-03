@@ -1,22 +1,4 @@
 /*
-GLOBAL
-*/ 
-.heading-site{
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-}
-.COLORED{
-	height:400px;
-	width:100%;
-	background-color: #3498db;
-	padding: 30px;
-	text-align: center;
-}
-/*
-GLOBAL
-*/
-
-/*
 HEADER
 */
 .header{
@@ -24,18 +6,18 @@ HEADER
 	width: 100%
 	margin-left:0;
 	margin-right:0;
-	height:10vh;
+	height:8vh;
 	line-height: 50px;
-	background-color:#000000;
+	background-color:#B4B8B5;
 	z-index: 999;
-	opacity: 0.7;
+	opacity: 0.96;
 }
 .header .header-logo{
 	color:#ffffff;
 	font-family: 'Montserrat', sans-serif;
 	float: left;
 	margin-left:30px;
-	margin-right:50vw;
+	margin-right:45vw;
 }
 .header .header-menu{
 	float:right;
@@ -43,18 +25,23 @@ HEADER
 	text-decoration: none;
 }
 
-.header .header-menu a{
+.header a{
 	margin-right: 15px;
 	color: #ffffff;
 }
-.
+.header .header-menu a{
+	margin-right: 15px;
+}
 
-.header .header-menu a:hover{
-	color:#3498db;
+.header a:hover{
+	padding:10 10px;
+	color: black;	
+ 	text-align: center;
+ 	text-decoration: none;
+  	display: inline-block;
 }
-.header .header-menu a:link{
-	text-decoration: none;
-}
+
+
 /*
 HEADER
 */
@@ -88,7 +75,7 @@ BANNER
 	color:#ffffff;
 }
 .banner .banner-content button{
-	margin-top: 50px;
+	margin-top: 150px;
 }
 /*
 BANNER
@@ -99,12 +86,9 @@ ABOUT
 */
 #section-about{
 	width:100%;
-	height:90vh;
-	margin: 0;
+	height:100vh;
 }
 
-#section-about .col-md-12{
-}
 #section-about .container_about{
 	display: flex;
 	flex-direction: row;
@@ -303,17 +287,31 @@ COMPETENCES
 */
 
 #skill-section{
-	padding-top: 50px;
+	padding-top: 80px;
 	background-color: #ddd;
 	height:100vh;
 	width: 100vw;
 	display: flex;
 	justify-content: space-around;
+	align-items: baseline;
 }
 #skill-section .logo-img{
 	height:50px;
 	width:50px;
 }
+#skill-section .item1{
+	background-color: red;
+	display:flex;
+}
+#skill-section .item2{
+	background-color: yellow;
+	display:flex;
+}
+#skill-section .item3{
+	background-color:green;
+	display:flex;
+}
+
 
 
 
@@ -326,7 +324,7 @@ FORMATIONS
 */
 
 #formations-section {
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-left: 20px;
 	height: 100vh;
 	width: 100%;
@@ -342,7 +340,7 @@ EXPERIENCES
 
 #experience-section {
 	background-color: #ddd;
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-left: 20px;
 	width: 100%
 	height:100vh;
@@ -356,7 +354,7 @@ EXPERIENCES
 PORTFOLIO
 */
 #portfolio-section {
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-bottom: 20px;
 	width: 100%;
 	height: 100vh;
@@ -466,7 +464,7 @@ FOOTER
 #contact-section {
 
 	background-color: #ddd;
-	padding: 50px 40px 50px 40px;
+	padding: 80px 40px 50px 40px;
 	padding-left: 40px;
 	width: 100%;
 	height: 100vh;

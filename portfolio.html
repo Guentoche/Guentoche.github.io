@@ -7,7 +7,7 @@
 		<title> Mon Portfolio</title>
 
 		<!--CSS-->
-		<link rel="stylesheet" href="public/css/style8.css">
+		<link rel="stylesheet" href="public/css/style9.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/png" href="public/favicon.png"/>
@@ -45,19 +45,6 @@
    			 		} // End if
   				});
 			});
-		
-			window.onscroll = function() {myFunction()};
-
-			var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
-
-			function myFunction() {
-			  if (window.pageYOffset >= sticky) {
-			    navbar.classList.add("sticky")
-			  } else {
-			    navbar.classList.remove("sticky");
-			  }
-			}
 		</script>
 		<!--SCRIPT-->
 
@@ -77,16 +64,16 @@
 		<!--header-->
 
 		<div class="block">
-			<header class=header>
-				<a href="#" class="header-logo"> Mon Portfolio</a>
-				<nav class="header-menu">
+			<nav class="header-menu fixed-top">
+				<header class=header>
+					<a href="#" class="header-logo"> Mon Portfolio</a>
 					<a href="#banner"><i class="fas fa-home"></i>  Accueil</a>
 					<a href="#skill-section"><i class="fas fa-pencil-alt"></i>  Mes compétences</a>
 					<a href="#formations-section"><i class="fas fa-briefcase"></i>  Parcours</a>
 					<a href="#portfolio-section"><i class="fas fa-archive"></i>  Mon Portfolio</a>
 					<a href="#contact"><i class="fas fa-phone"></i>  Contact</a>
-				</nav>
-			</header>
+				</header>
+			</nav>
 		</div>
 
 		<!--header-->
@@ -95,11 +82,12 @@
 
 		<div id="banner" class="block">
 			<div class="banner">
-				<img src="public/image/image.jpg" class="banner-image">
+				<img src="public/image/poste.jpg" class="banner-image">
 				<div class="banner-content">
 					<h1> Bienvenue sur mon portfolio</h1>
 					<h2> Découvrez mes travaux et mon univers !</h2><br/><br/>	
 					<button class="button is-link"> Télécharger mon CV</button>
+				</div>
 			</div>
 		</div>
 
@@ -136,17 +124,17 @@
 			</div>
 			<div class="container_skills">
 				<div class="columns">
-					<div class="col-md-4 thumbnail">
+					<div class="item">
 						<h5>Languages</h5>
 
 						<p>
 							<img src="public/image/web.png" width="150px" height="50px">
-							<img class="logo-img" src="public/image/c++.png"><br/> 
+							<img class="logo-img" src="public/image/c++.png">
 							<img src="public/image/php.png" height="50px" width="70px">
 							<img class="logo-img" src="public/image/python.png">			
 						</p>
 					</div>
-					<div class="col-md-4 thumbnail">
+					<div class="item">
 						<h5>Frameworks</h5>
 						<p>
 							<img class="logo-img" src="public/image/bootstrap.png">  
@@ -154,14 +142,14 @@
 							<img class="logo-img" src="public/image/symfony.png">  
 							<img src="public/image/eclipse.png" width="80px" height="80px">  
 							<img class="logo-img" src="public/image/phpstorm.png">
-							<img class="logo-img" src="public/image/visualstudio.png"><br/><br/>
+							<img class="logo-img" src="public/image/visualstudio.png">
 						</p>
 					</div>
-					<div class="col-md-4 thumbnail">
+					<div class="item">
 						<h5>OS et Technologies</h5>
 						<p>
 							<img class="logo-img" src="public/image/linux.png">
-							<img class="logo-img" src="public/image/windows.png"><br/>
+							<img class="logo-img" src="public/image/windows.png">
 							<img src="public/image/mysql.png" width="70px" height="50px">
 							<img src="public/image/arduino.png" width="60px"height="50px">
 							<img class="logo-img" src="public/image/raspberry.png">
@@ -262,7 +250,7 @@
                             <p class="category-separator text-center project-description-title">Technologies</p>
                             <p><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Qt</span> <span class="tag">Raspberry Pi</p>
                             <p class="category-separator text-center project-description-title	">Liens</p>
-                            <p><a class="visit-button" href="https://webagency.loiscuby.fr"><span class="fas fa-globe-americas fa-space-right"></span>Accéder au projet</a></p>
+                            <p><a class="visit-button" href="https://github.com/Guentoche/Projet_BTS"><span class="fas fa-globe-americas fa-space-right"></span>Accéder au projet</a></p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +263,7 @@
                             <p class="category-separator text-center project-description-title">Technologies</p>
                             <p><span class="tag">C</span> <span class="tag">Arduino</span></p>
                             <p class="category-separator text-center project-description-title">Liens</p>
-                            <p><a class="visit-button" href="https://github.com/Guentoche/Projet_BTS"><span class="fas fa-globe-americas fa-space-right"></span>Accéder au Projet</a></p>
+                            <p><a class="visit-button" href="https://github.com/Guentoche/Projet_Bac"><span class="fas fa-globe-americas fa-space-right"></span>Accéder au Projet</a></p>
                         </div>
                     </div>
                 </div>
