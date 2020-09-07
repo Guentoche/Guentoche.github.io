@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-		<title> Mon Portfolio</title>
+		<title> Théo Pean</title>
 
 		<!--CSS-->
-		<link rel="stylesheet" href="public/css/style9.css">
+		<link rel="stylesheet" href="public/css/style10.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="shortcut icon" type="image/png" href="public/favicon.png"/>
@@ -20,37 +20,12 @@
 		<!--FONT-->
 		<!--SCRIPT-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function(){
-  				// Add smooth scrolling to all links
-  			$("a").on('click', function(event) {
-	
-  	  		// Make sure this.hash has a value before overriding default behavior
-	  	  	if (this.hash !== "") {
-   		   	// Prevent default anchor click behavior
-    			event.preventDefault();
-	
-	    	  	// Store hash
-	   	 	 	var hash = this.hash;
-	
-		    	  // Using jQuery's animate() method to add smooth page scroll
-    			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-   				$('html, body').animate({
-    			   	scrollTop: $(hash).offset().top
-    				}, 600, function(){
-	
-    	   		// Add hash (#) to URL when done scrolling (default click behavior)
-  			   		 window.location.hash = hash;
-   			  		 });
-   			 		} // End if
-  				});
-			});
-		</script>
+		<script type="text/javascript" src="public/js/main.js"></script>
 		<!--SCRIPT-->
 
 		<!-- meta SEO-->
 		<meta name="description" content="La description de votre site! PRIMORDIAL: mettre des bons mots clés !">
-		<meta name="keywords" content="dev, web dev, dev back-end, portfolio">
+		<meta name="keywords" content="dev, web dev, dev back-end, portfolio, developpeur">
 		<meta name="title" content="Développeur Web Junior - Théo PEAN">
 		<!-- meta SEO-->
 
@@ -84,9 +59,8 @@
 			<div class="banner">
 				<img src="public/image/poste.jpg" class="banner-image">
 				<div class="banner-content">
-					<h1> Bienvenue sur mon portfolio</h1>
-					<h2> Découvrez mes travaux et mon univers !</h2><br/><br/>	
-					<button class="button is-link"> Télécharger mon CV</button>
+					<h1> Théo PEAN</h1>
+					<h2> Développeur Web débutant</h2><br/><br/>	
 				</div>
 			</div>
 		</div>
@@ -106,9 +80,9 @@
 						<img src="téléchargement.jpg">
 					</p>
 					<p class="element2">
-						Je m'appelle Théo, je suis titulaire d'un BTS SN IR. Je suis passionné par l'informatique, les mangas, les comics ainsi que le catch.
-						<br/>
-						Ce site recensera mon parcours, mes compétences ainsi que mes projets.
+						Jeune développeur diplômé d'un BTS SNIR au lycée Christophe Colomb, je suis passioné par l'informatique et plus particulièrement le développement web. Ce site recense mon parcours, mes compétences ainsi que mes projets.
+						<br/><br/><br/>
+						Je suis actuellement à la recherche d'un poste dans le développement Web (idéalement un stage ou une alternance).
 					</p>
 				</div>
 			</div>
@@ -124,36 +98,39 @@
 			</div>
 			<div class="container_skills">
 				<div class="columns">
-					<div class="item">
-						<h5>Languages</h5>
+					<div class="col">
+						<h4>Languages</h4>
 
 						<p>
-							<img src="public/image/web.png" width="150px" height="50px">
-							<img class="logo-img" src="public/image/c++.png">
-							<img src="public/image/php.png" height="50px" width="70px">
-							<img class="logo-img" src="public/image/python.png">			
+							<br/>
+							<img src="public/image/web.png" width="170px" height="70px" title="Logo HTML CSS et JS"><br/>
+							<img src="public/image/php.png" height="70px" width="70px" title="Logo PHP">
+							<img class="logo-img" src="public/image/c++.png" title="Logo C++">
+							<img class="logo-img" src="public/image/python.png" title="Logo python">			
 						</p>
 					</div>
-					<div class="item">
-						<h5>Frameworks</h5>
+					<div class="col">
+						<h4>Frameworks</h4>
 						<p>
-							<img class="logo-img" src="public/image/bootstrap.png">  
-							<img class="logo-img" src="public/image/bulma.png">  
-							<img class="logo-img" src="public/image/symfony.png">  
-							<img src="public/image/eclipse.png" width="80px" height="80px">  
-							<img class="logo-img" src="public/image/phpstorm.png">
-							<img class="logo-img" src="public/image/visualstudio.png">
+							<br/>
+							<img class="logo-img" src="public/image/bootstrap.png" title="Logo Bootstrap">  
+							<img class="logo-img" src="public/image/bulma.png" title="Logo Bulma">  
+							<img class="logo-img" src="public/image/symfony.png" title="Logo Symfony">  
+							<img src="public/image/eclipse.png" width="90px" height="90px" title="Logo Eclipse">  
+							<img class="logo-img" src="public/image/phpstorm.png" title="Logo PhpStorm">
+							<img class="logo-img" src="public/image/visualstudio.png" title="Logo VisualStudio">
 						</p>
 					</div>
-					<div class="item">
-						<h5>OS et Technologies</h5>
+					<div class="col">
+						<h4>OS et Technologies</h4>
 						<p>
-							<img class="logo-img" src="public/image/linux.png">
-							<img class="logo-img" src="public/image/windows.png">
-							<img src="public/image/mysql.png" width="70px" height="50px">
-							<img src="public/image/arduino.png" width="60px"height="50px">
-							<img class="logo-img" src="public/image/raspberry.png">
-							<img class="logo-img" src="public/image/github.png">
+							<br/>
+							<img class="logo-img" src="public/image/linux.png" title="Logo Linux">
+							<img class="logo-img" src="public/image/windows.png" title="Logo Windows">
+							<img src="public/image/mysql.png" width="70px" height="50px" title ="Logo MySql"><br/>
+							<img src="public/image/arduino.png" width="60px"height="50px" title="Logo Arduino">
+							<img class="logo-img" src="public/image/raspberry.png" title="Logo Raspberry">
+							<img class="logo-img" src="public/image/github.png" title="Logo GitHub">
 						</p>
 													
 					</div>
@@ -246,7 +223,7 @@
                         <img class="thumbnail-img"  src="public/image/autolib.png" alt="Projet Autolib">
                         <div class="project-description">
                             <p class="text-center font-weight-bold project-description-title">Autolib</p>
-                            <p class="text-center project-description-text">Projet de BTS, l'objectif est de reproduire le système Autolib avec diverses fonctionnalités comme la réservation de véhicule, la simulation du véhicule sur Raspberry, etc.</p>
+                            <p class="text-center project-description-text">Projet de BTS en groupe, l'objectif est de reproduire le système Autolib avec diverses fonctionnalités comme la réservation de véhicule, la simulation du véhicule sur Raspberry, etc.</p>
                             <p class="category-separator text-center project-description-title">Technologies</p>
                             <p><span class="tag">C++</span> <span class="tag">C</span> <span class="tag">Qt</span> <span class="tag">Raspberry Pi</p>
                             <p class="category-separator text-center project-description-title	">Liens</p>
@@ -283,6 +260,8 @@
 				
 			<div class="footer-information">
 				<h3>pean.theo@hotmail.fr</h3>
+				<br/>
+				<button class="button is-link"> Télécharger mon CV</button>
 				<br/><br/>
 				<p> 06.58.74.43.21</p>
 				<br/><br/>
@@ -297,11 +276,6 @@
 					<li>
 						<a id="github" href="https://github.com/Guentoche">
 							<i class="fab fa-github icon"></i> <!-- GitHub-->
-						</a>
-					</li>
-					<li>
-						<a id="insta" href="#">
-							<i class="fab fa-instagram fa-5x"></i> <!-- Instagram-->
 						</a>
 					</li>
 				</ul>

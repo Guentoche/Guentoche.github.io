@@ -1,53 +1,48 @@
 /*
-GLOBAL
-*/ 
-.heading-site{
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-}
-.COLORED{
-	height:400px;
-	width:100%;
-	background-color: #3498db;
-	padding: 30px;
-	text-align: center;
-}
-/*
-GLOBAL
-*/
-
-/*
 HEADER
 */
 .header{
 	top:0;
-	width: 100%
+	width: 100vw;
 	margin-left:0;
 	margin-right:0;
-	height:50px;
+	height:8vh;
 	line-height: 50px;
 	background-color:#000000;
 	z-index: 999;
+	opacity: 0.96;
+	position: fixed;
 }
 .header .header-logo{
 	color:#ffffff;
 	font-family: 'Montserrat', sans-serif;
 	float: left;
 	margin-left:30px;
+	margin-right:45vw;
 }
 .header .header-menu{
 	float:right;
 	margin-right: 30px;
+	text-decoration: none;
 }
 
-.header .header-menu a{
+.header a{
 	margin-right: 15px;
 	color: #ffffff;
 }
-
-.header .header-menu a:hover{
-	color:#3498db;
+.header .header-menu a{
+	margin-right: 15px;
 }
+
+.header a:hover{
+	padding:10 10px;
+	color: blue;	
+ 	text-align: center;
+ 	text-decoration: none;
+  	display: inline-block;
+}
+
+
 /*
 HEADER
 */
@@ -60,7 +55,7 @@ BANNER
 	}
 .banner .banner-image{
 	width: 100%;
-	height:400px;
+	height:100vh;
 	position:relative;
 	top:0;
 	left:0;
@@ -81,7 +76,7 @@ BANNER
 	color:#ffffff;
 }
 .banner .banner-content button{
-	margin-top: 50px;
+	margin-top: 150px;
 }
 /*
 BANNER
@@ -90,18 +85,28 @@ BANNER
 /* 
 ABOUT
 */
-#section-about{	
-	padding: 25px 40px 40px 40px;
-	margin: 0;
+#section-about{
+	width:100%;
+	height:100vh;
 }
 
-#section-about .col-md-12{
-	padding-bottom: 50px;
+#section-about .container_about{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
-#section-about p{
-	padding-left: 20px;
+#section-about .element1 img{
+	float:left;
+	height: 400px;
+	width: 400px;
+	
 }
+#section-about .element2 {
+	margin-left: 50px;
+	padding-right: 50px;
 
+
+}
 /* 
 ABOUT
 */
@@ -283,20 +288,29 @@ COMPETENCES
 */
 
 #skill-section{
-	padding-top: 50px;
+	padding-top: 80px;
 	background-color: #ddd;
+	height:100vh;
+	width: 100vw;
 }
 #skill-section .logo-img{
-	height:50px;
-	width:50px;
+	height:70px;
+	width:70px;
+	padding: 10px;
+}
+#skill-section .columns{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center
+}
+#skill-section .col{
+	margin: 80px;
+}
+#skill-section h4{
+	padding-left: 40px;
 }
 
-#skill-section .col-md-12{
-	padding-bottom: 50px;
-}
-#skill-section .skills{
-	padding-bottom: 50px;
-}
+
 /*
 COMPETENCES
 */
@@ -306,8 +320,10 @@ FORMATIONS
 */
 
 #formations-section {
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-left: 20px;
+	height: 100vh;
+	width: 100%;
 }
 
 /*
@@ -320,8 +336,10 @@ EXPERIENCES
 
 #experience-section {
 	background-color: #ddd;
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-left: 20px;
+	width: 100%
+	height:100vh;
 }
 
 /* 
@@ -332,8 +350,10 @@ EXPERIENCES
 PORTFOLIO
 */
 #portfolio-section {
-	padding-top: 50px;
+	padding-top: 80px;
 	padding-bottom: 20px;
+	width: 100%;
+	height: 100vh;
 }
 #project-gallery {
 	padding: 50px 40px 0 40px;
@@ -440,8 +460,10 @@ FOOTER
 #contact-section {
 
 	background-color: #ddd;
-	padding: 50px 40px 50px 40px;
+	padding: 80px 40px 50px 40px;
 	padding-left: 40px;
+	width: 100%;
+	height: 100vh;
 }
 
 #contact-section .col-md-12{
@@ -469,26 +491,18 @@ FOOTER
 .footer-information i{
 	font-size: 40px;
 	margin:20px;
+	z-index:1;
 }
 
 .fa-linkedin {
 	background: white;
   	color: #007bb5;
     -webkit-background-clip:text;
-    z-index:0;
  }
 .fa-github {
     background: white;
     color: black;
     -webkit-background-clip:text;
-}
-.fa-instagram {
-	font-size: 80px;
-  color: transparent;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 /*

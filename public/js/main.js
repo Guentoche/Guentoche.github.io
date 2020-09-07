@@ -1,42 +1,18 @@
-$(document).ready(function() {
-	// send mail with ajax
-
-	$('#sending_email').click(function(e){
-		e.preventDefault();
-		var data = {
-			email: $('#email').val(),
-			name: $('#name').val(),
-			firstname: $('#firstname').val(),
-			objet: $('#objet').val(),
-			message: $('#message').val()
-		};
-		//AJAX
-		$.ajax({
-			url: "mail.php",
-			type: 'POST',
-			data: data,
-			success: function(data) {
-				$('#js_alert_success').css({'display' : 'block'});
-				setTimeout(function(){
-					$('#js_alert_success').css({'display' : 'none'});
-					$('#email').val("");
-					$('#name').val("");
-					$('#firstname').val("");
-					$('#objet').val("");
-					$('#message').val("")
-				}, 3000);
-			},
-			error: function(data) {
-				$('#js_alert_danger').css({'display' : 'block'});
-				setTimeout(function(){
-					$('#js_alert_danger').css({'display' : 'none'});
-					$('#email').val("");
-					$('#name').val("");
-					$('#firstname').val("");
-					$('#objet').val("");
-					$('#message').val("")
-				}, 3000);
-			}
-		});
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
+	 	if (this.hash !== "") {
+     	// Prevent default anchor click behavior
+  		event.preventDefault();
+	  	// Store hash
+	 	 	var hash = this.hash;
+	 	  // Using jQuery's animate() method to add smooth page scroll
+  	  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  		$('html, body').animate({scrollTop: $(hash).offset().top}, 1000, function(){
+	  	  // Add hash (#) to URL when done scrolling (default click behavior)
+  		  window.location.hash = hash;
+	  	});
+ 		} // End if
 	});
 });
