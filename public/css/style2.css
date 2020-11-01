@@ -298,8 +298,8 @@ COMPETENCES
 	justify-content: center
 }
 #skill-section .col{
-	width:33%;
-	padding-left: 100px;
+	width:33vw;
+	padding-left: 10%;
 
 }
 #skill-section h4{
