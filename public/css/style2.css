@@ -18,7 +18,7 @@ HEADER
 	font-family: 'Montserrat', sans-serif;
 	float: left;
 	margin-left:30px;
-	margin-right:45vw;
+	margin-right:30px;
 }
 .header .header-menu{
 	float:right;
@@ -92,20 +92,14 @@ ABOUT
 
 #section-about .container_about{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-#section-about .element1 img{
-	float:left;
-	height: 400px;
-	width: 400px;
-	
+#section-about .element {
+	padding:40px;	
 }
-#section-about .element2 {
-	margin-left: 50px;
-	padding-right: 50px;
-
-
+#section-about .element img{
+	padding-left: 30px;
 }
 /* 
 ABOUT
@@ -300,11 +294,13 @@ COMPETENCES
 }
 #skill-section .columns{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center
 }
 #skill-section .col{
-	margin: 80px;
+	width:33%;
+	padding-left: 100px;
+
 }
 #skill-section h4{
 	padding-left: 40px;
