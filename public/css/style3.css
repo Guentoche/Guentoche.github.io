@@ -1,7 +1,7 @@
 /*
-HEADER
+NAVBAR
 */
-.header{
+.navbar{
 	top:0;
 	width: 100vw;
 	margin-left:0;
@@ -13,28 +13,28 @@ HEADER
 	opacity: 0.96;
 	position: fixed;
 }
-.header .header-logo{
-	color:#ffffff;
+.navbar .navbar-logo{
+	color:#000000;
 	font-family: 'Montserrat', sans-serif;
 	float: left;
 	margin-left:30px;
 	margin-right:30px;
 }
-.header .header-menu{
+.navbar .navbar-menu{
 	float:right;
 	margin-right: 30px;
 	text-decoration: none;
 }
 
-.header a{
+.navbar a{
 	margin-right: 15px;
-	color: #ffffff;
+	color: #000000;
 }
-.header .header-menu a{
+.navbar .navbar-menu a{
 	margin-right: 15px;
 }
 
-.header a:hover{
+.navbar a:hover{
 	padding:10 10px;
 	color: blue;	
  	text-align: center;
@@ -44,7 +44,7 @@ HEADER
 
 
 /*
-HEADER
+NAVBAR
 */
 
 /*
@@ -294,14 +294,16 @@ COMPETENCES
 }
 #skill-section .columns{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: nowrap;
+	justify-content: center
 }
-#skill-section .col-md-2{
-	align-items: center;
+#skill-section .col{
+	width:33vw;
+	padding-left: 10%;
+
 }
 #skill-section h4{
-	padding-left: 0px;
+	padding-left: 40px;
 }
 
 
@@ -332,13 +334,13 @@ EXPERIENCES
 	background-color: #ddd;
 	padding-top: 80px;
 	padding-left: 20px;
-	width: 100%;
+	width: 100%
 	height:100vh;
 }
+
 /* 
 EXPERIENCES 
 */
-
 
 /*
 PORTFOLIO
@@ -501,4 +503,14 @@ FOOTER
 
 /*
 FOOTER
+*/
+
+/*
+RESPONSIVE NAVBAR
+*/
+@media screen and (max-width: 770px){
+
+}
+/*
+RESPONSIVE NAVBAR
 */
